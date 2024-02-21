@@ -20,7 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');;
-Route::post('/store-event', [App\Http\Controllers\HomeController::class, 'store'])->name('store-event');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::post('/store-event', [App\Http\Controllers\HomeController::class, 'store'])->name('store-event')->middleware('auth');
+Route::get('/fetch-data', [App\Http\Controllers\HomeController::class, 'fetch'])->name('fetch-data')->middleware('auth');
+Route::post('/archive', [App\Http\Controllers\HomeController::class, 'archive'])->name('archive')->middleware('auth');
+Route::get('/archive', [App\Http\Controllers\HomeController::class, 'index_arhive'])->name('archive')->middleware('auth');
+
 
 

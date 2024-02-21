@@ -13,41 +13,39 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
   
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" integrity="sha512-liDnOrsa/NzR+4VyWQ3fBzsDBzal338A1VfUpQvAcdt+eL88ePCOd3n9VQpdA0Yxi4yglmLy/AmH+Lrzmn0eMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css"  />
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
      <!-- jQuery -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+     
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
 <!-- Bootstrap JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 <!-- FullCalendar JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
 
     @auth
-    <script>
-
-document.addEventListener('DOMContentLoaded', function() {
-  var calendarEl = document.getElementById('calendar');
-  var calendar = new FullCalendar.Calendar(calendarEl, {
-initialView: 'dayGridMonth',
-events: {!! $formattedEvents !!},
-selectable: true,
-selectInfo: true
-});
-  calendar.render();
-});
-
-</script>
- <!-- jQuery -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
 
 <!-- Bootstrap JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 <!-- FullCalendar JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
                     @endauth
     
 
@@ -97,6 +95,8 @@ selectInfo: true
     cursor: pointer;
 }
 
+.fc-sun, .fc-day, td { background-color:blue; }
+.fc-sat { background-color:red;  }
     </style>
 </head>
 <body>
@@ -155,7 +155,7 @@ selectInfo: true
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="mt-4">
             @yield('content')
         </main>
     </div>
@@ -189,5 +189,10 @@ window.onclick = function(event) {
 
 
 </script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.0/css/dataTables.bootstrap5.min.css">
+<script type="text/javascript" src="https://cdn.datatables.net/2.0.0/js/dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/2.0.0/js/dataTables.bootstrap5.min.js"></script>
+
 </body>
 </html>

@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use App\Models\Event;
 
@@ -14,12 +16,22 @@ class EventsTableSeeder extends Seeder
     {
         // Array of event data
         $events = [
-            ['title' => 'sick leave', 'date' => '2024-02-14', 'user_id' => 1],
-            ['title' => 'authorised', 'date' => '2024-02-10', 'user_id' => 1],
-            ['title' => 'sick leave', 'date' => '2024-02-25', 'user_id' => 1],
-            ['title' => 'authorised', 'date' => '2024-02-25', 'user_id' => 1],
-            ['title' => 'unplanned', 'date' => '2024-02-23', 'user_id' => 1],
-            ['title' => 'unauthorised', 'date' => '2024-02-07', 'user_id' => 1],
+            ['title' => '4', 'date' => '2024-02-14', 'user_id' => 1],
+            ['title' => '1', 'date' => '2024-02-10', 'user_id' => 1],
+            ['title' => '4', 'date' => '2024-02-25', 'user_id' => 1],
+            ['title' => '1', 'date' => '2024-02-25', 'user_id' => 1],
+            ['title' => '2', 'date' => '2024-02-23', 'user_id' => 1],
+            ['title' => '1', 'date' => '2024-02-07', 'user_id' => 1],
+            ['title' => '4', 'date' => '2024-02-02', 'user_id' => 1],
+    ['title' => '4', 'date' => '2024-02-05', 'user_id' => 1],
+    ['title' => '1', 'date' => '2024-02-08', 'user_id' => 1],
+    ['title' => '4', 'date' => '2024-02-11', 'user_id' => 1],
+    ['title' => '4', 'date' => '2024-02-12', 'user_id' => 1],
+    ['title' => '2', 'date' => '2024-02-15', 'user_id' => 1],
+    ['title' => '1', 'date' => '2024-02-18', 'user_id' => 1],
+    ['title' => '4', 'date' => '2024-02-19', 'user_id' => 1],
+    ['title' => '1', 'date' => '2024-02-22', 'user_id' => 1],
+    ['title' => '1', 'date' => '2024-02-24', 'user_id' => 1],
         ];
 
         // Loop through the event data and create records in the database
@@ -32,4 +44,3 @@ class EventsTableSeeder extends Seeder
         }
     }
 }
-
