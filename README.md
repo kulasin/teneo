@@ -1,8 +1,15 @@
+-V1.0
+
+
+
 - Aplikacija je napravljena u Laravelu, Bootsrapu i JavaScriptu
 - Logika samog zadatka je unaprijeđena, te je na istu dodan eloquent model za autentifikaciju. To nam dozvoljava da svaki korisnik vidi i dodaje informacije SAMO O SEBI
 - Za uspješno pokretanje potrebno pokrenuti migraciju baze i seedere. Nakon toga, seederi će napraviti demo data (jednog usera - podaci za login admin@example.com, Admin1234!, te nekoliko recorda u bazi za izostanke)
 - Ako budete imali problema sa migracijom ili seederima, bazu možete preuzeti na linku https://drive.google.com/file/d/1HZ5jv6HaR2LKZtdALB8vu4nbirqHN55M/view?usp=drive_link
 - Na kraju, sama registracija (dodavanje korisnika) je moguća. Testni podaci su napravljeni samo u svrhu lakšeg pregleda valjanosti
+
+
+
 
 - V2.0
 - Zadatak 1:
