@@ -15,7 +15,7 @@
 
 
 
-- Zadatak 1:
+Zadatak 1:
 Vikendi naznačeni drugim bojama
 Kalendar je generisan JavaScriptom. 
 
